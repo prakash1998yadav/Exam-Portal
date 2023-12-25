@@ -1,0 +1,39 @@
+
+<div class="bootstrap-wrapper ">
+    <div class="cotainer ">
+        <div class="row mt20">
+            <div class="col-md-6 offset-md-3">
+                <mat-card>
+                
+                <h1 class="text-center">Add New Category </h1>
+            <form (ngSubmit)="formSubmit()">
+                  
+    <!-- {{user | json}} -->
+         <!-- Username Field -->
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Category Title</mat-label>
+                <input required=""
+                [(ngModel)]="category.title" name="title" 
+                 matInput placeholder="Enter Here">
+                <mat-hint>Please enter category title</mat-hint>
+            </mat-form-field>
+            &nbsp;
+            <br>
+            <br>
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Category Description</mat-label>
+                <textarea
+                [(ngModel)]="category.description" name="description"
+                 matInput placeholder="Enter Here" ></textarea>
+                <mat-hint>Please enter category description</mat-hint>
+            </mat-form-field>
+            <div class="container text-center">
+                <button mat-raised-button color="primary" type="submit">Add</button>
+                
+            </div>
+            </form>
+        </mat-card>
+    </div>
+</div>
+</div>
+</div>
